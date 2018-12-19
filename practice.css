@@ -1,0 +1,53 @@
+body {
+	margin: 0;
+	font-family: sans-serif;
+	border: 1px solid red;
+}
+.hero {
+	/* sizing */
+	width: 98.1vw;
+	height: 100vh;
+	/* flexbox */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	/* text styles */
+	text-align: center;
+	color: white;
+	/* background styles */
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url(https://codetheweb.blog/assets/img/posts/full-image-hero/image.jpg);
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+
+}
+.hero h1 {
+	/* Text styles */
+	font-size: 5em;
+	/*margins */
+	margin-top: 0;
+	margin-bottom: 0.5em;
+}
+.hero .btn {
+	/* positioning and sizing */
+	display:block;
+	width: 200px;
+	/* padding and margins */
+	padding: 1em;
+	margin: 50px auto 0 auto;
+	/* text styles */
+	color: white;
+	text-decoration: none;
+	font-size: 1.5em;
+	/* border styles */
+	border: 3px solid white;
+	border-radius: 20px;
+	/*background styles */
+	background-color: rgba(147, 112, 219, 0.8);
+
+}
+
+.hero-inner {
+	/* border: 1px solid black; */
+}

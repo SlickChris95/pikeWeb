@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Contact - CSUSB PIKE</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+
+</head>
+<body>
+  <div id="overlay"></div>
+  <div id='menu-container'>
+    <div class='menu'>
+        <a href="index.html"><div class="logo"><span><span id="csusb">CSUSB</span> PIKE</span></div></a>
+        <div id="menuToggle">
+          <input type="checkbox" id="hamburger-button" onclick="dim(this)"/>
+
+          <span></span>
+          <span></span>
+          <span></span>
+
+          <ul id="menu">
+            <a href="index.html"><li>Home</li></a>
+            <a href="colony.html"><li>Colony</li></a>
+            <a href="contact.html"><li>Contact</li></a>
+          </ul>
+        </div>
+
+
+
+          <ul class="links">
+            <li class="home"><a href="index.html">Home</a></li>
+            <li class="colony space"><a class="a" href="colony.html">Colony</a></li>
+            <li class="contact-link space"><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+  </div>
+  <section class="banner2">
+    <div class="hero-inner">
+      <h1>Contact</h1>
+    </div>
+  </section>
+
+<div id="contact-container">
+  <form class="contact-form"action="#">
+    <header>
+      <!-- <h2 class="form-text">CONTACT US</h2> -->
+      <!-- <p class="form-text">6000 University Parkway, 92407</p> -->
+    </header>
+    <div>
+      <label class="desc" id="title1" for="Field1">
+        <p>Full Name *</p>
+      </label>
+      <div>
+        <input id="Field1" type="text" name="Field1"  placeholder="Frederick Southgate Taylor"  size="8">
+      </div>
+    </div>
+
+    <div>
+      <label class="desc" id="title2" for="Field2">
+        <p>Email Address *</p>
+      </label>
+      <div>
+        <input id="Field2" type="email" name="Field2"  maxlength="255" spellcheck="false" value="" placeholder="csusbPike@gmail.com">
+      </div>
+    </div>
+    <div>
+      <label class="desc" id="title3" placeholder="Subject" for="Field3">
+        <p>Subject*</p>
+      </label>
+      <div>
+        <input id="Field3" type="text" name="Field3"  size="8">
+      </div>
+    </div>
+    <div>
+      <label class="desc" id="title4" for="Field4">
+        <p>Message</p>
+      </label>
+      <div>
+        <textarea id="Field4" spellcheck="true" name="Field4" rows="10" cols="50"></textarea>
+      </div>
+    </div>
+    <button class="submit-btn">SUBMIT</button>
+  </form>
+<!-- Google maps -->
+<div class="map">
+		<iframe
+			  width= 750px
+			  height="350"
+			  align="middle"
+			  frameborder="0" style="border:0"
+			  src="https://www.google.com/maps/embed/v1/place?key=AIzaSyAmanoliD7kptCcpPK_Dl3kg0LcBRhLTCk
+			  &q=place_id:ChIJ18hFFptRw4ARInn08NJCwfo&zoom=16"
+
+		 	 allowfullscreen>
+	  	</iframe>
+</div>
+
+<div class="directory-container">
+  <h1>Executive Board Members</h1>
+  <div class="directory">
+    <ul>
+      <li><span>Secretary</span> Angel Brown:<p>pike@gmail.com</p></li>
+      <li><span>Recruitment Chair</span> Matt Brown:<p>pike@gmail.com</p></li>
+      <li><span>Sergeant at Arms:</span> Lonnie Brown:<p>pike@gmail.com</p></li>
+      <li><span>President:</span> Hector Brown:<p>pike@gmail.com</p></li>
+      <li><span>Internal VP:</span> Meme Brown:<p>pike@gmail.com</p></li>
+      <li><span>External VP:</span> Andrew Brown:<p>pike@gmail.com</p></li>
+      <li><span>New Member VP:</span> Brody Brown:<p>pike@gmail.com</p></li>
+      <li><span>Treasurer:</span> Collier Brown:<p>pike@gmail.com</p></li>
+    </ul>
+  </div>
+</div>
+</div>
+
+<div class="footer">
+    <div class="social-container">
+      <div class="coyote">
+        <img id="coyoteLogo" src="imgs/coyote.png" alt="">
+      </div>
+
+      <div class="contact">
+        <h1 class="contactUsHeader">Contact</h1>
+        <div>
+          <p>6000 University pkwy, San Bernardino</p>
+          <p>pike.secretary.csusb@gmail.com</p>
+        </div>
+      </div>
+      <div class="social-media">
+        <h1 class="contactUsHeader">Social</h1>
+        <div class="social">
+          <a href="https://www.instagram.com/csusbpike/?hl=en" target="https://www.instagram.com/csusbpike/?hl=en"><img class="icon" src="imgs/insta.svg" alt="" title="Follow us on Instagram!"></a>
+          <a href="https://www.facebook.com/csusbpike/"><img class="icon" src="imgs/fb.svg" alt="facebook" title="Like us on Facebook!"></a>
+          <a href="https://twitter.com/csusbpike" target="https://twitter.com/csusbpike"><img class="icon" src="imgs/twitter.svg" alt="" title="Follow us on Twitter!"></a>
+        </div>
+      </div>
+
+      <div class="explore">
+        <h1 class="contactUsHeader">Explore</h1>
+        <p><a href="index.html">Home</a></p>
+        <p><a href="colony.html">Colony</a></p>
+        <p><a href="contact.html">Contact</a></p>
+      </div>
+  </div>
+</div>
+<div class="sub-footer">
+  <p>&copy;	CSUSB PI KAPPA ALPHA</p>
+</div>
+  <script src="js/script.js" charset="utf-8"></script>
+
+</body>
+</html>

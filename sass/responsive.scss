@@ -1,0 +1,344 @@
+/* We will be using a minimum responsive design for 320px */
+/* Start the hamburger menu at 830px */
+$small:540px;
+$med:630px;
+$tablet: 850px;
+$desktop: 1020px;
+$garnet : #762330;
+$gold : #EED484;
+
+@media only screen and (max-width: 1450px){
+.panel {
+  .panel-inner-container {
+    // background-color: purple;
+    width: 100%;
+  }
+}
+
+}
+
+@media only screen and (min-width: $desktop){
+  // body {
+  //   background-color: blue;
+  // }
+  .directory-container {
+    h1 {
+      font-size: 2em;
+    }
+  }
+  .contact-form {
+    h2 {
+      font-size: 2em;
+      margin: 25px 0px;
+    }
+  }
+  form {
+    text-align: center;
+    textarea {
+      width: 700px;
+      height: 300px;
+    }
+  }
+  iframe {
+    display: block;
+    margin: 1.3em auto;
+  }
+}
+@media only screen and (max-width: $desktop){
+// body {
+//   background-color: purple;
+// }
+#rushVideo {
+  width: 95%;
+  height: 500px;
+}
+.fourPillars {
+  .pillar-container {
+    width: 100%;
+  }
+}
+.social-container {
+  width: 100%;
+  // background-color: blue;
+}
+}
+@media only screen and (max-width: $tablet){
+//footer change to column, add coyote picture
+// body {
+//   background-color: red;
+// }
+.social-container {
+  flex-direction: column;
+  .coyote {
+    display: block;
+  }
+  .contact {
+    display: none;
+  }
+
+}
+  iframe {
+		width: 90%;
+	}
+  #rushVideo {
+    width: 100%;
+    height: 400px;
+  }
+  form {
+    input[type="text"],input[type="email"] {
+      width: 500px;
+    }
+    textarea {
+      width: 550px;
+    }
+  }
+  .banner-container h1 {
+    font-size: 5.3em;
+    margin: 0 5px;
+  }
+  .links {
+    display: none;
+  }
+  .menu {
+    justify-content: space-between;
+    padding: 0 20px 0 0;
+    flex-direction: row-reverse; /* tentative */
+  }
+  #menuToggle {
+    display: block;
+  }
+  .logo span {
+    font-size: 1.6em;
+  }
+  .exec-container {
+    .exec-photos {
+      .exec-profile {
+        margin-bottom: 20px;
+      }
+    }
+  }
+
+
+  }
+@media only screen and (max-width: $med){
+  // body {
+  //   background-color: purple;
+  // }
+  iframe {
+		width: 100%;
+	}
+  #rushVideo {
+    height: 250px;
+  }
+  form {
+    textarea,input[type="text"],input[type="email"] {
+      width: 80%;
+    }
+  }
+  .banner-img {
+    height: 600px;
+  }
+  .banner-container h1 {
+    top: 200px;
+  }
+  .intro {
+    width: 90%;
+  }
+  .exec-container {
+    width: 90%;
+    .exec-photos {
+      img {
+        width: 90%;
+      }
+      figcaption {
+        margin-bottom: 10px;
+      }
+      strong, p {
+        font-size: 1.1em;
+      }
+    }
+  }
+  .panel {
+    height: 650px;
+    .panel-item {
+      margin-bottom: 7px;
+    }
+    .panel-inner-container {
+      flex-direction: column;
+    }
+  }
+
+}
+@media only screen and (max-width: $small){
+  /*responsive form */
+
+  form {
+    .form-text{
+      font-size: 1.2em;
+    }
+    textarea,input[type="text"],input[type="email"] {
+      width: 90%;
+    }
+  }
+  .directory {
+    width: 100%;
+    flex-wrap: wrap-reverse;
+  }
+  .directory-container {
+    flex-direction: column-reverse;
+
+  }
+  .service-wrapper .pillarImg {
+    width: 90vw;
+  }
+  .service-wrapper-inner, .slag, .description {
+    display: none;
+  }
+  .banner-container h1 {
+    font-size: 4.1em;
+    margin: 0 10px;
+    top: 160px;
+  }
+  .banner-img {
+    height: 470px;
+  }
+  .exec-container {
+    width: 90%;
+    .exec-photos {
+      img {
+        width: 100%;
+      }
+
+      .exec-profile {
+        margin-bottom: 50px;
+      }
+    }
+  }
+  .hero {
+    h1 {
+      font-size: 3em;
+    }
+  }
+  /* form styling */
+
+}
+/*
+ * hamburger menu
+ */
+ ul {
+   a {
+     text-decoration: none;
+     color: $gold;
+     padding: 1px;
+     transition: color 0.3s ease;
+     &:hover {
+       color: white;
+     }
+   }
+ }
+
+ #menuToggle {
+   position: relative;
+   top: 15px;
+   right: 50px;
+   z-index: 1;
+   -webkit-user-select: none;
+   user-select: none;
+  input {
+    display: block;
+    width: 40px;
+    position: absolute;
+    top: -5px;
+    left: 77px;
+    cursor: pointer;
+     opacity: 0; /* hide this */
+    z-index: 30; /* and place it over the hamburger */
+    -webkit-touch-callout: none;
+  }
+ }
+/*
+ *  a quick hamburger menu
+ */
+
+ #menuToggle  {
+   span {
+     display: block;
+     width: 33px;
+     height: 4px;
+     margin-bottom: 5px;
+     position: relative;
+     background: $gold;
+     border-radius: 3px;
+     left: 80px;
+     top: -10px;
+
+     z-index: 25;
+     transform-origin: 4px 0px;
+
+     transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+               background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+     opacity 0.55s ease;
+     &:first-child {
+       transform-origin: 0% 0%;
+     }
+     &:nth-last-child(2){
+       transform-origin: 0% 100%;
+     }
+   }
+
+ }
+
+#menuToggle input:checked ~ span {
+  opacity: 1;
+  transform: rotate(45deg) translate(-2px, -1px);
+  background: white;
+}
+/*
+ * But let's hide the middle one.
+ */
+#menuToggle input:checked ~ span:nth-last-child(3){
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+/* the last one will go the other direction */
+#menuToggle input:checked ~ span:nth-last-child(2){
+  transform: rotate(-45deg) translate(0, -1px);
+}
+/* make this absolute positioned at the top left
+ * of the screen
+ */
+ #menu {
+   position: absolute;
+   width: 200px;
+   height: 100vh;
+   margin: 5px 0 0 40px; /*
+   margin-right: 410px */
+   padding: 50px;
+   padding-top: 15px;
+   z-index: -1;
+   background: $garnet;
+   /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
+   list-style-type: none;
+   -webkit-font-smoothing: antialiased;
+  /* to stop flickering of text in safari */
+  transform-origin: 100% 0%;
+  transform: translate(-100%, 0px);
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+  z-index: 20;
+  li {
+    padding: 5px 0;
+    font-size: 1.1em;
+  }
+ }
+
+
+ #menuToggle input:checked ~ ul {
+   transform:none;
+ }
+ .slag-hidden p {
+  display: none;
+ }
+ .logo {
+   margin-right: 7px;
+ }
