@@ -245,6 +245,23 @@ li > a {
   /*background styles */
   background-image: url("/../imgs/convention6.jpg"); }
 
+.tiny-banner {
+  height: 200px;
+  background-color: #C64A4A;
+  margin-bottom: 50px;
+  text-align: center;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  text-transform: uppercase; }
+  .tiny-banner h1 {
+    margin-top: 50px;
+    font-size: 50px;
+    padding-top: 50px;
+    color: white;
+    margin-bottom: 50px; }
+
 .small-banner {
   height: 500px;
   background-color: #E5E5E5;
@@ -288,7 +305,7 @@ li > a {
   border-top: 300px;
   margin: 35px auto 120px auto;
   font-style: italic;
-  color: #E5E5E5; }
+  color: #9f9898; }
 
 .fourPillars {
   margin: 0 auto;

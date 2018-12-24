@@ -125,6 +125,13 @@
     top: 160px; }
   .banner-img {
     height: 470px; }
+  .tiny-banner h1 {
+    font-size: 2.5em; }
+  .small-banner h1 {
+    font-size: 2.5em; }
+  .small-banner .rectangle-banner {
+    width: 80%;
+    height: 250px; }
   .exec-container {
     width: 90%; }
     .exec-container .exec-photos img {
