@@ -121,7 +121,9 @@
             <i class="fas fa-graduation-cap"></i>
         </div>
         <div class="panel-stat">
-            <p>3.4</p>
+          <div class="counter-stat">
+              <p id="gpa-num"></p>
+          </div>
         </div>
         <div class="panel-title">
           <p>Colony GPA</p>
@@ -132,7 +134,7 @@
             <i class="fas fa-users"></i>
         </div>
         <div class="panel-stat">
-            <p>100%</p>
+          <p id="involvement-num"></p><p>%</p>
         </div>
         <div class="panel-title">
           <p>Campus Involvement</p>
@@ -143,7 +145,7 @@
           <i class="fas fa-hand-holding-heart"></i>
         </div>
         <div class="panel-stat">
-            <p>$5,000+</p>
+            <p>$</p><p id="donations-num"></p><p>+</p>
         </div>
         <div class="panel-title">
           <p>Donations Raised</p>
@@ -202,6 +204,35 @@
 <div class="sub-footer">
   <p>Copyright &copy;	CSUSB Pi Kappa Alpha</p>
 </div>
+  <script src="countUp.js"></script>
+  <script>
+    var options = {
+      useEasing: true,
+      useGrouping: true,
+      seperator: ',',
+      decimal: '.',
+    };
+
+    var gpa = new CountUp('gpa-num',0,3.4,2,5,options);
+
+    if(!gpa.error){
+      gpa.start();
+    }else{
+      console.error(gpa.error);
+    }
+    var donations = new CountUp('involvement-num',0,100,0,5,options);
+    if(!donations.error){
+      donations.start();
+    }else{
+      console.error(donations.error);
+    }
+    var donations = new CountUp('donations-num',0,5000,0,5,options);
+    if(!donations.error){
+      donations.start();
+    }else{
+      console.error(donations.error);
+    }
+  </script>
   <script src="js/script.js" charset="utf-8"></script>
 </body>
 </html>

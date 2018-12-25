@@ -153,9 +153,16 @@ li > a {
       .panel .panel-inner-container .panel-item .panel-icon {
         font-size: 70px;
         color: #C64A4A; }
-      .panel .panel-inner-container .panel-item .panel-stat p {
-        font-size: 3em;
-        color: white; }
+      .panel .panel-inner-container .panel-item .panel-stat {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center; }
+        .panel .panel-inner-container .panel-item .panel-stat p {
+          font-size: 3em;
+          color: white; }
       .panel .panel-inner-container .panel-item .panel-title p {
         padding-top: 10px;
         font-size: 1.7em;
@@ -257,7 +264,7 @@ li > a {
   text-transform: uppercase; }
   .tiny-banner h1 {
     margin-top: 50px;
-    font-size: 50px;
+    font-size: 45px;
     padding-top: 50px;
     color: white;
     margin-bottom: 50px; }
