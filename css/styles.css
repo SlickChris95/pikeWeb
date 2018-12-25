@@ -187,8 +187,8 @@ li > a {
   text-align: center;
   color: white;
   /*background styles */
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url(https://codetheweb.blog/assets/img/posts/full-image-hero/image.jpg);
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://codetheweb.blog/assets/img/posts/full-image-hero/image.jpg);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url(https://res.cloudinary.com/slickchris33/image/upload/v1545731786/city_ofsil7.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://res.cloudinary.com/slickchris33/image/upload/v1545731786/city_ofsil7.jpg);
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -246,11 +246,11 @@ li > a {
 
 .banner {
   /*background styles */
-  background-image: url("/../imgs/convention5.jpg"); }
+  background-image: url("https://res.cloudinary.com/slickchris33/image/upload/v1545730125/convention5_uthxyi.jpg"); }
 
 .banner2 {
   /*background styles */
-  background-image: url("/../imgs/convention6.jpg"); }
+  background-image: url("https://res.cloudinary.com/slickchris33/image/upload/v1545730026/convention6_q6yhcy.jpg"); }
 
 .tiny-banner {
   height: 200px;
