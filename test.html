@@ -17,21 +17,7 @@
   <title>Document</title>
 </head>
 <body>
-  <div class="navbar">
-    <a href="#home">Home</a>
-    <a href="#news">News</a>
 
-    <!-- <div class="dropdown">
-      <button class="dropbtn" onclick="myFunction()">
-        Dropdown <i class="fa fa-caret-down"></i>
-      </button>
-      <div class="dropdown-content" id="myDropdown">
-        <a href="#">Link 1</a>
-        <a href="#">Link 2</a>
-        <a href="#">Link 3</a>
-      </div>
-    </div>
-  </div> -->
 
   <div id="overlay"></div>
   <div id='menu-container'>
@@ -46,7 +32,15 @@
 
           <ul id="menu">
             <a href="index.html"><li>Home</li></a>
-            <a href="test.html"><li>Test</li></a>
+            <li id="responsive-dropdown-btn">Test
+              <ul id="responsive-dropdown">
+                <li>Hi</li>
+                <li>hello</li>
+                <li>sup</li>
+              </ul>
+            </li>
+
+            </a>
             <a href="colony.html"><li>Colony</li></a>
             <a href="contact.html"><li>Contact</li></a>
           </ul>
@@ -56,15 +50,13 @@
 
           <ul class="links border-debug">
             <li class="home"><a href="index.html">Home</a></li>
-            <div class="dropdown space">
-              <button class="dropbtn" onclick="myFunction()">
-                DROPDOWN <i class="fa fa-caret-down"></i>
-              </button>
-              <div class="dropdown-content" id="myDropdown">
-                <a href="#">Link 1</a>
-                <a href="#">Link 2</a>
-                <a href="#">Link 3</a>
-              </div>
+              <div class=" space dropdownX">
+                <button class="dropbtnX">DROPDOWN</button>
+                <div class="dropdown-contentX">
+                  <a href="#">Link 1</a>
+                  <a href="#">Link 2</a>
+                  <a href="#">Link 3</a>
+                </div>
               </div>
               <li class="colony space"><a class="a" href="colony.html">Colony</a></li>
             <li class="contact-link space"><a href="contact.html">Contact</a></li>
