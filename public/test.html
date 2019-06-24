@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- <link rel="stylesheet" href="css/test.css"> -->
+  <script defer src="https://use.fontawesome.com/releases/v5.1.0/js/all.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" type="image/png" href="faviPike.png">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/responsive.css">
+<script defer src="https://use.fontawesome.com/releases/v5.1.0/js/all.js"></script>
+  <title>CSUSB PIKE</title>
+  <title>Document</title>
+</head>
+<body>
+
+
+  <div id="overlay"></div>
+  <div id='menu-container'>
+    <div class='menu'>
+        <a href="index.html"><div class="logo"><span><span id="csusb">CSUSB</span> PIKE</span></div></a>
+        <div id="menuToggle">
+          <input type="checkbox" id="hamburger-button" onclick="dim(this)"/>
+
+          <span></span>
+          <span></span>
+          <span></span>
+
+          <ul id="menu">
+            <a href="index.html"><li>Home</li></a>
+            <li id="responsive-dropdown-btn">Test
+              <ul id="responsive-dropdown">
+                <li>Hi</li>
+                <li>hello</li>
+                <li>sup</li>
+              </ul>
+            </li>
+
+            </a>
+            <a href="colony.html"><li>Colony</li></a>
+            <a href="contact.html"><li>Contact</li></a>
+          </ul>
+        </div>
+
+
+
+          <ul class="links border-debug">
+            <li class="home"><a href="index.html">Home</a></li>
+              <div class=" space dropdownX">
+                <button class="dropbtnX">DROPDOWN</button>
+                <div class="dropdown-contentX">
+                  <a href="#">Link 1</a>
+                  <a href="#">Link 2</a>
+                  <a href="#">Link 3</a>
+                </div>
+              </div>
+              <li class="colony space"><a class="a" href="colony.html">Colony</a></li>
+            <li class="contact-link space"><a href="contact.html">Contact</a></li>
+          </ul>
+
+  </div>
+
+
+
+
+
+
+
+  <script>
+/* When the user clicks on the button,
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(e) {
+  if (!e.target.matches('.dropbtn')) {
+  var myDropdown = document.getElementById("myDropdown");
+    if (myDropdown.classList.contains('show')) {
+      myDropdown.classList.remove('show');
+    }
+  }
+}
+</script>
+
+</body>
+</html>

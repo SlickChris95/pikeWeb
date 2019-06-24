@@ -4,12 +4,13 @@
   "description": "",
   "main": "gulpfile.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node server.js"
   },
   "author": "Chris Torres",
   "license": "ISC",
   "devDependencies": {},
   "dependencies": {
+    "express": "^4.17.1",
     "gulp": "^3.9.0",
     "gulp-imagemin": "^5.0.3"
   }
